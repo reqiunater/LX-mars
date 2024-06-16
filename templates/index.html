@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Beli tanah mars" />
+    <meta property="og:description" content="STugas Sekolah" />
+    <meta property="og:image" content="{{ url_for('static', filename='untitled.png') }}" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -79,12 +82,21 @@
 
     <style>
       .container {
-        max-width: 900px;
+        max-width: 1400x;
         margin: 0 auto;
             }
 
+      .order {
+        text-align: center;
+      }
+
+      .order-info {
+        margin: auto;
+        max-width: 70%;
+      }
+
       table {
-        max-width: 1400px;
+        width: 100%;
         margin: auto;
       }
     </style>
@@ -95,7 +107,7 @@
     <div class="container">
       <div class="order">
         <h1>Buy Mars Land</h1>
-        <h3>Price: $1.00 / acres</h3>
+        <h3>Price: $1.00 / milimeter</h3>
         <p>
           Dont waste your time<br />
           This time for investing your money!!
@@ -135,7 +147,7 @@
               <th scope="col">No.</th>
               <th scope="col">Name</th>
               <th scope="col">Address</th>
-              <th scope="col">Acres</th>
+              <th scope="col">Milimeters</th>
             </tr>
           </thead>
           <tbody id="order-box"></tbody>
